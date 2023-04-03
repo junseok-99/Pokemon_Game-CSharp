@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9FF2C86B-52F3-40E3-9367-E368444A79CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PokemonDungeonGame</RootNamespace>
+    <AssemblyName>PokemonDungeonGame</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>lijamongicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Boss.cs" />
+    <Compile Include="FightRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FightRoom.Designer.cs">
+      <DependentUpon>FightRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FightRoom[multi].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FightRoom[multi].Designer.cs">
+      <DependentUpon>FightRoom[multi].cs</DependentUpon>
+    </Compile>
+    <Compile Include="FingerMiniGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FingerMiniGame.Designer.cs">
+      <DependentUpon>FingerMiniGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Firy.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gyarados.cs" />
+    <Compile Include="IMoving.cs" />
+    <Compile Include="Kkobuk.cs" />
+    <Compile Include="Lijamong.cs" />
+    <Compile Include="Mangnanyong.cs" />
+    <Compile Include="Mews.cs" />
+    <Compile Include="Nameform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nameform.Designer.cs">
+      <DependentUpon>Nameform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PauseGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PauseGame.Designer.cs">
+      <DependentUpon>PauseGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PauseGame_Multi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PauseGame_Multi.Designer.cs">
+      <DependentUpon>PauseGame_Multi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pikachu.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Pokemon.cs" />
+    <Compile Include="PokemonChoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PokemonChoice.Designer.cs">
+      <DependentUpon>PokemonChoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store.Designer.cs">
+      <DependentUpon>Store.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Store_Multi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Store_Multi.Designer.cs">
+      <DependentUpon>Store_Multi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="FightRoom.resx">
+      <DependentUpon>FightRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FightRoom[multi].resx">
+      <DependentUpon>FightRoom[multi].cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FingerMiniGame.resx">
+      <DependentUpon>FingerMiniGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nameform.resx">
+      <DependentUpon>Nameform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PauseGame.resx">
+      <DependentUpon>PauseGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PauseGame_Multi.resx">
+      <DependentUpon>PauseGame_Multi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PokemonChoice.resx">
+      <DependentUpon>PokemonChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store.resx">
+      <DependentUpon>Store.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Store_Multi.resx">
+      <DependentUpon>Store_Multi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lijamongicon.ico" />
+    <None Include="Resources\startimg.png" />
+    <None Include="Resources\pauseimg.png" />
+    <None Include="Resources\storeimg.png" />
+    <None Include="Resources\hpp.png" />
+    <None Include="Resources\att.png" />
+    <None Include="Resources\mp.jpg" />
+    <None Include="Resources\hp.png" />
+    <None Include="Resources\store.png" />
+    <None Include="Resources\Pause.png" />
+    <None Include="Resources\gyra.png" />
+    <None Include="Resources\mangna.png" />
+    <None Include="Resources\mew.png" />
+    <None Include="Resources\lijamong1.png" />
+    <None Include="Resources\KakaoTalk_20210531_162001491_04.png" />
+    <None Include="Resources\KakaoTalk_20210531_162001491.png" />
+    <None Include="Resources\KakaoTalk_20210531_162001491_03.png" />
+    <None Include="Resources\mangnanyong.jpg" />
+    <None Include="Resources\gyarados.jpg" />
+    <None Include="Resources\lijamong.png" />
+    <None Include="Resources\pikachu.png" />
+    <None Include="Resources\mews.png" />
+    <None Include="Resources\fightroom.jpg" />
+    <None Include="Resources\firy.png" />
+    <None Include="Resources\kkobuk.png" />
+    <None Include="Resources\maintema.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
