@@ -20,8 +20,8 @@
 
 <img width="80%" src="https://user-images.githubusercontent.com/81612834/230771512-a914ccd9-4826-404c-897a-9e915c81cb16.png"/>
 <img width="80%" src="https://user-images.githubusercontent.com/81612834/230771514-32565d72-0cb3-4e15-98f0-7ceade785127.png"/>
-<p>싱글 모드 : 1인 플레이</p>
+<p><b>- 싱글 모드 : 1인 플레이</b></p>
 <img width="80%" src="https://user-images.githubusercontent.com/81612834/230771516-0dc5ba92-74ea-49ac-880f-debf037308ba.png"/>
-<p>멀티 모드 : 다른 사용자와 대화하며 플레이 가능</p>
+<p><b>- 멀티 모드 : 다른 사용자와 대화하며 플레이 가능</b></p>
 <img width="80%" src="https://user-images.githubusercontent.com/81612834/230771519-b823bc45-8efd-4ac3-8bc7-b8090055f478.png"/>
 
